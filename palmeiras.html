@@ -1,52 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Palmeiras</title>
-		<link rel="stylesheet" href="assets/css/styles.css">
-	</head>
-	<body>
-		<nav class="menu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmeiras</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="assets/img/escudo-palmeiras-atual.png" alt="Escudo do Palmeiras" class="logo">
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#init" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#idols" class="nav-link">Ídolos</a></li>
+                    <li class="nav-item"><a href="#hist" class="nav-link">História</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <a href="login.html"><button>Entrar</button></a>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt="Ícone de menu"></button>
+            </div>
+
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#init" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#idols" class="nav-link">Ídolos</a></li>
+                <li class="nav-item"><a href="#hist" class="nav-link">História</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="login.html" target="_self">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        	<div class="cont" id="init">
+				<h1>Bem-vindo ao site do Maior Campeão do Brasil!</h1>
+				<div class="text">
+					<p>Seja bem-vindo ao mundo do Palmeiras, um dos clubes mais vitoriosos, apaixonantes e tradicionais do futebol brasileiro!<br> Aqui você encontrará tudo sobre o Maior Campeão do Brasil: sua rica história, seus títulos inesquecíveis, seus craques eternos e a força de uma torcida que nunca abandona.<br> Navegue, vibre, se emocione, porque ser palmeirense é viver intensamente cada momento com o coração verde e branco pulsando forte!
+						💚 Avanti, Palestra!
+						</p>
+					</div>
+					<div class="imgw">
+						<img src="assets/img/capa-tacas.png" alt="imagem de boas vindas ao site do Palmeiras" >
+					</div>
+			</div>
+
 			
-			<img src="/palmeiras/img/escudo-palmeiras-atual.png" class="logo">
-			<h1 class="mh1">Avanti Palestra</h1>
-			
-			
-			<input type="checkbox" id="menu-toggle" class="c-input">
-			<label for="menu-toggle" class="menu-lines">
-				<span></span>
-				<span></span>
-				<span></span>
-			</label>
+			<div class="cont" id="idols">
+				<h1>Principais Ídolos do Palmeiras</h1>
+				<div class="text">
+					<div class="post-it">
+						<p>
+							Os ídolos do Palmeiras são verdadeiros símbolos de garra, talento e amor pelo clube. Entre eles, destacam-se:<br>
+							<br>
+							- **Marcos**: O eterno goleiro, conhecido como "São Marcos", é um dos maiores ídolos da história do clube, com defesas memoráveis e uma carreira repleta de títulos.<br>
+							- **Edmundo**: O "Animal" é lembrado por sua habilidade e paixão em campo, sendo um dos atacantes mais icônicos do Verdão.<br>
+							- **César Maluco**: Um dos maiores artilheiros da história do Palmeiras, famoso por seu estilo único e gols decisivos.<br>
+							- **Ademir da Guia**: O maior, mais icônico e importante jogador que já jogou pelo Alviverde Imponente.<br>
+							<br>
+							Esses craques deixaram suas marcas na história do clube e continuam a ser reverenciados pela torcida.
+						</p>
+					</div>
+				</div>
+				<div class="cr">
+					<img src="assets/img/redimensionada.jpg" alt="idolos do clube">
+				</div>
+			</div>
 
-			<ul>
-				<li><a href="#home">Início</a></li>
-
-				<li><a href="#hist">História</a></li>
-
-				<li><a href="#titles">Títulos</a></li>
-
-				<li><a href="#superstars">Estrelas</a></li>
-
-				<li><a href="#news">Notícias</a></li>
-			</ul>
-		</nav>
-
-		<div id="home" class="div1">
-
-		</div>
-		<div id="hist" class="div2">
-
-		</div>
-		<div id="titles" class="div3">
-
-		</div>
-		<div id="superstars" class="div4">
-
-		</div>
-		<div id="news" class="div5">
-
-		</div>
+			<div class="cont" id="hist">
+				<h1>História do Palmeiras</h1>
+				<div class="text">
+					<div id="block">
+						<p>
+						A Sociedade Esportiva Palmeiras nasceu em 26 de agosto de 1914, fundada por imigrantes italianos na cidade de São Paulo, inicialmente com o nome de Palestra Italia. A ideia era representar a força e o orgulho da colônia italiana por meio do futebol. Desde o início, o clube mostrou grandeza, conquistando rapidamente seu espaço entre os grandes do país.<br>
+						<br>
+						Durante a Segunda Guerra Mundial, por causa de pressões políticas, o clube foi obrigado a mudar seu nome, devido à proibição de símbolos ligados ao Eixo (Itália, Alemanha e Japão). Em 1942, surgiu então o nome Palmeiras, e com ele já veio uma vitória histórica: o clube venceu o São Paulo no que ficou conhecido como a “Arrancada Heroica”, com os jogadores adversários abandonando o campo, e o Verdão se sagrando campeão paulista.<br>
+						<br>
+						Desde então, o Palmeiras se consolidou como um dos maiores clubes do Brasil e do mundo, conquistando títulos importantes como a Copa Rio Internacional de 1951, considerada a primeira competição mundial de clubes, e uma série de campeonatos brasileiros, copas do Brasil e estaduais.<br>
+						<br>
+						💚 Ser Palmeiras é carregar no peito a história de um gigante.
+						</p>
+					</div>
+					<div class="dfc">
+						<img src="assets/img/dfc.png" alt="lema do time">
+					</div>
+				</div>
+			</div>
+		</main>
 	</body>
 </html>
